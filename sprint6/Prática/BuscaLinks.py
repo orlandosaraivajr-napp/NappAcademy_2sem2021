@@ -29,11 +29,3 @@ for link in lista_de_links:
     lista_links_encontrados.append(link.attrs.get('href',''))
 
 
-lista = []
-for link in lista_links_encontrados: 
-    print(link) 
-    if link.startswith('http'): 
-        r = requests.get(link) 
-        lista.append((r.status_code, link))
-
-
